@@ -187,7 +187,6 @@ function handleCardClick (event) {
 		event.target !== firstCard &&
 		event.target !== secondCard &&
 		event.target.classList.contains('clicked') === false &&
-		event.target.classList.contains('matched') === false &&
 		arrayOfClicked.length < 2
 	) {
 		// you can use event.target to see which element was clicked
@@ -223,9 +222,7 @@ function handleCardClick (event) {
 				} else {
 					numMatched += 2;
 					firstCard.style.border = '2px solid lightgreen';
-					firstCard.classList.add('matched');
 					secondCard.style.border = '2px solid lightgreen';
-					secondCard.classList.add('matched');
 					arrayOfMatched.push(firstCard);
 					arrayOfMatched.push(secondCard);
 				}
