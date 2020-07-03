@@ -1,0 +1,220 @@
+section {
+	background-color: rgba(255, 255, 255, 0.2);
+	width: 80%;
+	padding: 1% 5% 3% 5%;
+	margin: 0 auto;
+	border-radius: 1em;
+	box-shadow: 4px 4px 4px black;
+	border: 3px solid white;
+}
+
+#top-section {
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+
+h2 {
+	display: inline-block;
+	color: white;
+	margin: 0 5px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+		sans-serif;
+}
+
+div.new-high-score {
+	transition: 1s;
+	text-shadow: 2px 2px 2px black;
+	font-size: 20pt;
+	font-weight: bold;
+	display: block;
+	margin: 20px 5px 40px 5px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+		sans-serif;
+}
+
+div h2.new-high-score {
+	transition: 2s;
+	color: lightgreen;
+	text-shadow: 2px 2px 2px black;
+	-webkit-text-stroke-color: black;
+	-webkit-text-stroke-width: 2px;
+	font-size: 40pt;
+	font-weight: bold;
+	display: block;
+	margin: 35px 5px 20px 5px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+		sans-serif;
+}
+
+h2.high-score {
+	display: block;
+	margin: 20px 5px 10px 5px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+		sans-serif;
+}
+
+#game #score-counter {
+	transition: 0.5s;
+	border: none;
+	width: fit-content;
+	height: fit-content;
+	text-align: center;
+	margin: 25px auto 0px auto;
+}
+
+#reset-button {
+	margin-top: 30px;
+}
+
+#game {
+	display: flexbox;
+	/* margin: 0 auto; */
+	justify-content: space-evenly;
+	text-align: center;
+}
+
+#game div.circle {
+	transition: 0.5s;
+	border: 2px solid black;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	display: inline-block;
+	justify-content: space-evenly;
+	box-shadow: 2px 2px 4px black;
+	background-image: url('https://p.kindpng.com/picc/s/73-738732_transparent-green-question-mark-png-questions-mark-in.png');
+	background-position: center;
+	background-size: 122%;
+}
+
+#game div.circle:hover {
+	transition-duration: 1s;
+	background-size: 100%;
+	transform: rotate(45deg);
+}
+
+#game div.circle.clicked {
+	background-image: none;
+	transition-duration: 0.5s;
+}
+
+body {
+	background-image: url('https://free4kwallpapers.com/uploads/originals/2019/06/24/rgb-everything-wallpaper.jpg');
+	background-size: 100%;
+	color-interpolation-filters: linearRGB;
+}
+
+h1 {
+	font-size: 30pt;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+		sans-serif;
+	text-align: center;
+	color: white;
+	text-shadow: 2px 2px 4px black;
+}
+
+.reset-button-end-class {
+	transition: 0.25s;
+	display: ineline-block;
+	margin: 25px 15px 15px 15px;
+	padding: 10px;
+	font-size: 20px;
+	text-transform: uppercase;
+	background-color: lightgreen;
+	color: black;
+	border: 2px solid white;
+	border-radius: 1em;
+	outline: none;
+	box-shadow: 2px 2px 2px black;
+}
+
+.reset-button-class {
+	transition-duration: 0.25s;
+	display: ineline-block;
+	margin: 25px 15px 15px 15px;
+	padding: 10px;
+	font-size: 20px;
+	text-transform: uppercase;
+	background-color: rgb(99, 99, 143);
+	color: white;
+	border: 2px solid white;
+	border-radius: 1em;
+	outline: none;
+	box-shadow: 2px 2px 2px black;
+}
+
+.button-class {
+	transition: .25s;
+	display: ineline-block;
+	margin: 0px 15px 10px 15px;
+	padding: 10px;
+	font-size: 20px;
+	text-transform: uppercase;
+	background-color: rgb(99, 99, 143);
+	color: white;
+	border: 2px solid white;
+	border-radius: 1em;
+	outline: none;
+	box-shadow: 2px 2px 2px black;
+}
+
+.button-class:hover {
+	transition: 0.25s;
+	background-color: rgb(138, 138, 199);
+}
+
+.reset-button-class:hover {
+	transition: 0.25s;
+	background-color: rgb(138, 138, 199);
+}
+
+.reset-button-end-class:hover {
+	transition: 0.25s;
+	background-color: rgb(255, 255, 255);
+}
+
+#game div.easy-circle {
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	background-size: 122%;
+}
+#game div.med-circle {
+	width: 85px;
+	height: 85px;
+	margin: 8.5px;
+	background-size: 122%;
+}
+#game div.hard-circle {
+	width: 70px;
+	height: 70px;
+	margin: 7px;
+	background-size: 122%;
+}
+
+.reset-button-end-class:active {
+	transition: 0s;
+	background-color: rgb(0, 0, 0);
+	color: white;
+	text-shadow: 1px 1px 0px black;
+	transform: translateY(1%);
+}
+
+.button-class:active {
+	transition: 0s;
+	background-color: black;
+	text-shadow: 1px 1px 0px black;
+	transform: translateY(1%);
+	outline: none;
+}
+
+.reset-button-class:active {
+	transition: 0s;
+	background-color: rgb(0, 0, 0);
+	color: white;
+	text-shadow: 1px 1px 0px black;
+	transform: translateY(1%);
+	outline: none;
+}
